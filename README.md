@@ -1,4 +1,4 @@
-- https://rpc.bb.sarjananode.studio
-- https://grpc.bb.sarjananode.studio
-- https://api.bb.sarjananode.studio
-- https://snapshot.bb.sarjananode.studio
+- RPC : https://rpc.bb.sarjananode.studio
+- gRPC : https://grpc.bb.sarjananode.studio
+- API : https://api.bb.sarjananode.studio
+- Snapshot : https://snapshot.bb.sarjananode.studio/bonusblock/
