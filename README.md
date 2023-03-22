@@ -120,30 +120,34 @@ bonus-blockd tx slashing unjail \
   --gas-adjustment=1.2 \
   --gas=auto
 ```
-### 
+### Voting
 ```
-
+bonus-blockd tx gov vote 1 yes --from $WALLET --chain-id=$BONUS_CHAIN_ID --gas=auto --fees=2500000ubonus
 ```
-### 
+## Delegasi dan Rewards
+### Delegasi
 ```
-
+bonus-blockd tx staking delegate $BONUS_VALOPER_ADDRESS 1000000000000ubonus --from=$WALLET --chain-id=$BONUS_CHAIN_ID --gas=auto --fees=250000ubonus
 ```
-
-### 
+### Withdraw reward
 ```
-
+bonus-blockd tx distribution withdraw-all-rewards --from=$WALLET --chain-id=$BONUS_CHAIN_ID --gas=auto --fees=2500000ubonus
 ```
-### 
+### Withdraw reward beserta komisi
 ```
-
+bonus-blockd tx distribution withdraw-rewards $BONUS_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$BONUS_CHAIN_ID --gas=auto --fees=2500000ubonus
 ```
-### 
+## Hapus node
 ```
-
-```
-### 
-```
-
+sudo systemctl stop bonus-blockd && \
+sudo systemctl disable bonus-blockd && \
+rm -rf /etc/systemd/system/bonus-blockd.service && \
+sudo systemctl daemon-reload && \
+cd $HOME && \
+rm -rf BonusBlock-chain && \
+rm -rf bonus.sh && \
+rm -rf .bonusblock && \
+rm -rf $(which bonus-blockd)
 ```
 
 
