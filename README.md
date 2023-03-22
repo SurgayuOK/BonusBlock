@@ -1,5 +1,2 @@
-- RPC : https://rpc.bb.sarjananode.studio
-- gRPC : https://grpc.bb.sarjananode.studio
-- API : https://api.bb.sarjananode.studio
 - Snapshot : https://snapshot.node.sarjananode.studio/bb/
 - Snapshot File : https://snapshot.node.sarjananode.studio/bb/snapshot_latest.tar.lz4
