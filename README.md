@@ -1,5 +1,5 @@
-- Snapshot : https://snapshot.node.sarjananode.studio/bb/
-- Snapshot File : https://snapshot.node.sarjananode.studio/bb/snapshot_latest.tar.lz4
+- Snapshot : https://snap.node.seputar.codes/bb/
+- Snapshot File : https://snap.node.seputar.codes/bb/snapshot_latest.tar.lz4
 
 ________________________________________________
 
@@ -23,7 +23,7 @@ rm -rf $HOME/.bonusblock/data
 ```
 ### 2. Use our Snapshot
 ```
-curl -L  https://snapshot.node.sarjananode.studio/bb/snapshot_latest.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.bonusblock
+curl -L  https://snap.node.seputar.codes/bb/snapshot_latest.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.bonusblock
 mv $HOME/.bonusblock/priv_validator_state.json.backup $HOME/.bonusblock/data/priv_validator_state.json
 ```
 ### 3. Start Node
